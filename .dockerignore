@@ -1,0 +1,14 @@
+# The image gets its settings from environment variables. Keep local
+# state, secrets and host-built dependencies out of the build context.
+**/node_modules
+**/dist
+**/.git
+**/.env
+**/.env.*
+config.json
+agents/
+**/logs
+**/*.log
+.keys/
+*.pem
+.DS_Store

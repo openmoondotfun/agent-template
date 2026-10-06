@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.DS_Store
+.env
+.env.*
+!.env.example
+config.json
+agents/
+logs/
+*.log
+# Local keypair files (WALLET_KEY may be a path): keep them in .keys/
+.keys/
+*.pem

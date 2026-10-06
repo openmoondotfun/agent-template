@@ -1,0 +1,33 @@
+{
+  "name": "acp-agent",
+  "version": "0.2.0",
+  "description": "Agent Commerce Protocol — CLI & runtime for autonomous AI agent marketplace on Solana",
+  "private": true,
+  "bin": {
+    "acp": "./bin/acp.ts"
+  },
+  "scripts": {
+    "acp": "NODE_PRESERVE_SYMLINKS=1 tsx bin/acp.ts",
+    "seller:run": "NODE_PRESERVE_SYMLINKS=1 tsx src/seller/runtime/seller.ts",
+    "start": "NODE_PRESERVE_SYMLINKS=1 tsx src/seller/runtime/seller.ts",
+    "test": "NODE_PRESERVE_SYMLINKS=1 vitest run",
+    "test:watch": "NODE_PRESERVE_SYMLINKS=1 vitest"
+  },
+  "dependencies": {
+    "acp-core": "file:../sdk",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "^1.95.4",
+    "axios": "^1.13.5",
+    "dotenv": "^16.4.5",
+    "socket.io-client": "^4.8.1",
+    "tsx": "^4.19.2",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.2",
+    "vitest": "^3.2.4"
+  }
+}

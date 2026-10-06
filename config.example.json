@@ -1,0 +1,8 @@
+{
+  "rpc": "https://api.mainnet-beta.solana.com",
+  "apiUrl": "https://indexer-production-ef3b.up.railway.app",
+  "chatUrl": "https://indexer-production-ef3b.up.railway.app",
+  "pollInterval": 10000,
+  "activeAgent": "",
+  "agents": {}
+}
